@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpendFox Privacy Policy</title>
+<meta name="description" content="Privacy policy of SpendFox, the private, offline expense tracker for Android.">
+<style>
+  :root { --bg:#fbfdf9; --fg:#1a1c1a; --muted:#5b625c; --accent:#00695c; --card:#eef3ef; --line:#d6ddd7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111412; --fg:#e2e6e2; --muted:#a5ada6; --accent:#4fd8c4; --card:#1b201d; --line:#2c332e; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); font-size:.95rem; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; margin:24px 0; }
+  .summary ul { margin:8px 0 0; padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:8px 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SpendFox Privacy Policy</h1>
+  <p class="muted">Effective date: 24 October 2026 · App: SpendFox (Android, package <code>com.vpvision.spendfox</code>)</p>
+
+  <div class="summary">
+    <strong>In short</strong>
+    <ul>
+      <li>SpendFox works <strong>offline</strong>. The app has no internet permission.</li>
+      <li>We <strong>do not collect, upload, sell or share</strong> your personal or financial data.</li>
+      <li>No account, no sign-up, <strong>no ads, no analytics, no tracking</strong>.</li>
+      <li>Everything you enter stays on your phone unless <em>you</em> choose to back it up or export it.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>SpendFox ("the app", "we") is a personal expense tracker and money manager published on Google Play by VPVision.
+     This policy explains what information the app uses and how it is handled.</p>
+
+  <h2>2. Information stored on your device</h2>
+  <p>To work, the app stores the information you enter <strong>only in its private storage on your device</strong>:</p>
+  <ul>
+    <li>Transactions (amount, date, type, category, account, payee, notes, tags, spending rating)</li>
+    <li>Accounts, balances, budgets, categories, recurring payments and templates</li>
+    <li>Receipt photos you attach</li>
+    <li>App settings (currency, language, theme, reminders)</li>
+  </ul>
+  <p>This data is never sent to us or to any third party by the app. We have no server and no access to it.</p>
+
+  <h2>3. Permissions and optional features</h2>
+  <table>
+    <tr><th>Feature / permission</th><th>What it is used for</th></tr>
+    <tr><td>Notifications</td>
+        <td>Daily reminder and bill/due-date reminders, and (if enabled) notices about automatically added transactions.</td></tr>
+    <tr><td>Run at start-up</td>
+        <td>Re-schedules your reminders after the phone restarts.</td></tr>
+    <tr><td>Camera / photo picker (optional)</td>
+        <td>Only when you attach a receipt. The photo is copied into the app's private storage. The system photo picker
+            gives the app access only to the photo you pick.</td></tr>
+    <tr><td>Notification access – Auto-capture (optional, off by default)</td>
+        <td>If you turn it on, SpendFox reads notifications <strong>only from the payment, banking and SMS apps you allow</strong>
+            to detect transactions (for example a UPI payment or a bank SMS alert). The text is processed
+            <strong>entirely on your device</strong>. Messages that are not transactions (such as personal chats or OTPs) are ignored.
+            For detected transactions the app keeps only the extracted details (amount, payee, date, last digits of the
+            account) and a one-way fingerprint (hash) used to avoid duplicates. The original message text is not stored
+            and nothing is uploaded. SpendFox does not request SMS permission and cannot read your SMS inbox.
+            You can turn this off at any time in the app or in Android settings.</td></tr>
+    <tr><td>Share to SpendFox (optional)</td>
+        <td>Text you share into the app (for example a bank message) is parsed on your device to suggest a transaction.</td></tr>
+  </table>
+
+  <h2>4. Backups and exports (your choice)</h2>
+  <ul>
+    <li><strong>Manual and automatic backups</strong> are written to a folder <em>you</em> choose (for example on your phone, or a
+        folder synced by Google Drive, OneDrive or Dropbox). Backups can be protected with a password you set; the password
+        is not sent anywhere. If you choose a cloud-synced folder, that provider handles the file under its own privacy policy.</li>
+    <li><strong>Android device backup:</strong> if you enable automatic backup in the app, Android's built-in backup may copy the latest
+        <em>encrypted</em> SpendFox backup file to your Google account so you can restore it on a new phone. This is managed by
+        Google under Google's privacy policy; the file can only be opened with your backup password.</li>
+    <li><strong>Exports</strong> (CSV, PDF, JSON) are created only when you ask, and saved where you choose.</li>
+  </ul>
+
+  <h2>5. Security</h2>
+  <p>Your data stays in the app's private storage, which other apps cannot read. The optional PIN lock is stored as a salted
+     hash, not as plain text. Backup files are encrypted (AES-256) when you set a password. Please keep your phone and
+     backup password secure; we cannot recover a lost backup password.</p>
+
+  <h2>6. Third parties</h2>
+  <p>SpendFox contains <strong>no advertising, analytics or tracking SDKs</strong> and does not share data with third parties.
+     Fonts are provided by Android/Google Play services on your device; this does not involve your personal or financial data.</p>
+
+  <h2>7. Children</h2>
+  <p>SpendFox is not directed to children under 13, and we do not knowingly collect information from anyone.</p>
+
+  <h2>8. Your control and data deletion</h2>
+  <ul>
+    <li>You can edit or delete any record at any time.</li>
+    <li>In the app, <strong>Settings → Delete &amp; reset</strong> erases all data.</li>
+    <li>Uninstalling the app deletes all data stored by it on your phone. Backup or export files you saved elsewhere remain
+        under your control and can be deleted by you.</li>
+  </ul>
+  <p>Because we do not collect your data, we have no copy of it to access, correct or delete on our side.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and the effective date above. Significant changes will also be noted
+     in the app's release notes.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy? Contact us at <a href="mailto:help.vpvision@gmail.com">YOUR_SUPPORT_EMAIL</a>.</p>
+
+  <footer class="muted">© 2026 VPVision · SpendFox</footer>
+</main>
+</body>
+</html>
